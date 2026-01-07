@@ -1,0 +1,17 @@
+.navigation {
+    display: flex;
+    gap: 40px;
+    .navigation__link {
+        font: 700 10px / 100% "Montserrat", sans-serif;
+        color: rgba(92, 106, 121, 1);
+        text-decoration: none;
+    }
+    .navigation__link:hover,
+    .disabled{
+        font-weight: 900;
+        color: rgba(28, 42, 57, 1);
+    }
+    .disabled {
+        pointer-events: none;
+    }
+}

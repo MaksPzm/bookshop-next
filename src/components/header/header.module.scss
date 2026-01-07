@@ -1,0 +1,14 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 47px 155px 40px 166px;
+    .logo {
+        font-size: 24px;
+    }
+    .heder__blockUsers {
+        display: flex;
+        align-items: center;
+        gap: 99px;
+    }
+}

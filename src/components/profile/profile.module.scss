@@ -1,0 +1,20 @@
+.profile{
+    position: relative;
+    cursor: pointer;
+    .profile__user {
+        position: absolute;
+        top: 28px;
+        left: -110px;
+        z-index: 1;
+    }
+}
+.profile::before {
+    position: absolute;
+    content: "";
+    width: 150%;
+    height: 150%;
+    display: block;
+    opacity: 0.1%;
+    top: -30%;
+    left: -30%;
+}
