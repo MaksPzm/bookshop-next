@@ -13,3 +13,14 @@ export interface ShoppingCartComponentProps {
 export interface UserComponentProps {
     className?: string;
 }
+
+export interface SliderComponentProps {
+    className?: string;
+}
+
+export interface BannerSelectionBtnComponentProps {
+    className?: string;
+    indexImg: number;
+    setIndexImg: (indexImg: number) => void;
+
+}
