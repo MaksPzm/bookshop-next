@@ -1,9 +1,9 @@
 "use client"
 import styles from "./UsersProfile.module.scss";
-import {UserComponentProps} from "@/shared/interfaice/interfaice";
+import {ClassProps} from "@/shared/interfaice/interfaice";
 import React, {ChangeEvent, JSX, useEffect, useState, MouseEvent} from "react";
 
-export const UsersProfile = ( props: UserComponentProps): JSX.Element => {
+export const UsersProfile = ( props: ClassProps): JSX.Element => {
     const { className } = props;
     const [email, setEmail] = useState<string | null>(null);
     const [password, setPassword] = useState<string | null>(null);

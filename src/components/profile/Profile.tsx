@@ -1,12 +1,12 @@
 "use client"
-import {ProfileComponentProps} from "@/shared/interfaice/interfaice";
+import {ClassProps} from "@/shared/interfaice/interfaice";
 import {JSX, useState} from "react";
 import styles from "./profile.module.scss";
 import Image from "next/image";
 import USER from "@/../public/svg/user.svg";
 import {UsersProfile} from "@/components/usersProfile/UsersProfile";
 
-export const Profile = ( props: ProfileComponentProps ): JSX.Element => {
+export const Profile = ( props: ClassProps ): JSX.Element => {
     const { className } = props;
     const [isActive, setActive] = useState(false);
     const handleClick = () => {

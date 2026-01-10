@@ -2,12 +2,12 @@
 import { imagesSliderArray} from "@/constants/imagesSliderArray";
 import Image, {StaticImageData} from "next/image";
 import {useEffect, useState} from "react";
-import {SliderComponentProps} from "@/shared/interfaice/interfaice";
+import {ClassProps} from "@/shared/interfaice/interfaice";
 import styles from "./slider.module.scss";
 import {BannerSelectionBtn} from "@/components/bannerSelectionBtn/BannerSelectionBtn";
 import {Promo} from "@/components/promo/Promo";
 
-export const Slider = ( { className }: SliderComponentProps ) => {
+export const Slider = ( { className }: ClassProps ) => {
     const [indexImg, setIndexImg] = useState<number>(0);
     const [activeBanner, setActiveBanner] = useState<StaticImageData>(imagesSliderArray[indexImg]);
     useEffect(() => {

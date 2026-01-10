@@ -1,0 +1,38 @@
+.categories {
+    width: 416px;
+    height: 710px;
+    padding-top: 45px;
+    background-color: rgba(239, 238, 246, 1);
+
+
+    .listCategories {
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+        align-items: center;
+        cursor: pointer;
+        list-style: none;
+        .listCategories__link {
+            font: 500 12px / 100% "Montserrat", sans-serif;
+            color: rgba(92, 106, 121, 1);
+            text-decoration: none;
+            position: relative;
+        }
+        .listCategories__link:hover,
+        .listCategories__link_active {
+            font-size: 16px;
+            font-weight: 700;
+        }
+        .listCategories__link:hover::before,
+        .listCategories__link_active::before {
+            content: "";
+            width: 6px;
+            height: 6px;
+            background-color: rgba(117, 106, 211, 1);
+            border-radius: 50%;
+            position: absolute;
+            top: 6px;
+            left: -14px;
+        }
+    }
+}
