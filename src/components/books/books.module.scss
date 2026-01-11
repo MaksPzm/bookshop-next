@@ -1,0 +1,65 @@
+.book {
+    width: 424px;
+    height: 300px;
+    display: flex;
+    gap: 36px;
+    .book__img {
+        width: 212px;
+        height: 300px;
+        box-shadow: 0 24px 36px rgba(53, 49, 84, 0.28);
+    }
+    .blockDescription {
+        width: 176px;
+        height: 203px;
+        margin-top: 49px;
+        .blockDescription__text {
+            font: 10px "Open Sans", sans-serif;
+            color: rgba(92, 106, 121, 1);
+        }
+        .blockDescription__name {
+            font-size: 16px;
+            line-height: 100%;
+            margin-top: 4px;
+        }
+        .blockDescription__review {
+            padding-top: 4px;
+        }
+        .blockDescription__description {
+            width: 176px;
+            height: 38px;
+            margin-top: 16px;
+            text-transform: capitalize;
+        }
+        .blockDescription__price {
+            font: bold 13px "Montserrat", sans-serif;
+            padding-top: 16px;
+        }
+
+        .blockDescription__btn,
+        .blockDescription__btn_disabled {
+            display: block;
+            width: 176px;
+            height: 45px;
+            margin-top: 16px;
+            background-color: white;
+            text-transform: uppercase;
+            font: bold 8px "Montserrat", sans-serif;
+        }
+
+        .blockDescription__btn {
+            border: 1px solid rgba(76, 61, 178, 1);
+            color: rgba(76, 61, 178, 1);
+            cursor: pointer;
+        }
+        .blockDescription__btn:hover {
+            border: none;
+            background-color: rgba(76, 61, 178, 1);
+            color: white;
+        }
+        .blockDescription__btn_disabled {
+            border: 1px solid rgba(92, 106, 121, 1);
+            color: rgba(92, 106, 121, 1);
+            background-color: white;
+        }
+    }
+}

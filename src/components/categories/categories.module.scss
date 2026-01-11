@@ -3,13 +3,14 @@
     height: 710px;
     padding-top: 45px;
     background-color: rgba(239, 238, 246, 1);
-
+    position: absolute;
+    z-index: -1;
 
     .listCategories {
         display: flex;
         flex-direction: column;
         gap: 23px;
-        align-items: center;
+        margin-left: 160px;
         cursor: pointer;
         list-style: none;
         .listCategories__link {

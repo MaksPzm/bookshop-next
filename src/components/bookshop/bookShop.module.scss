@@ -1,5 +1,31 @@
 .bookShop {
-    width: 100vw;
-    margin-top: 105px;
+    max-width: 1440px;
+    margin: 105px auto 0;
     position: relative;
+    .bookShop__books {
+        width: 924px;
+        display: flex;
+        column-gap: 76px;
+        row-gap: 96px;
+        flex-wrap: wrap;
+        padding-top: 46px;
+        margin: 0 auto 0 356px;
+        .bookShop__books_btn {
+            display: block;
+            width: 176px;
+            height: 45px;
+            margin: 96px auto 74px;
+            background-color: white;
+            text-transform: uppercase;
+            font: bold 8px "Montserrat", sans-serif;
+            border: 1px solid rgba(76, 61, 178, 1);
+            color: rgba(76, 61, 178, 1);
+            cursor: pointer;
+        }
+        .bookShop__books_btn:hover {
+            border: none;
+            background-color: rgba(76, 61, 178, 1);
+            color: white;
+        }
+    }
 }
