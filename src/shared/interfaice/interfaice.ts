@@ -7,3 +7,37 @@ export interface BannerSelectionBtnComponentProps {
     indexImg: number;
     setIndexImg: (indexImg: number) => void;
 }
+
+export interface Book {
+    id: string;
+    saleInfo: {
+        listPrice: {
+            amount: number;
+            currencyCode: string;
+        },
+        selfLink: string,
+    }
+    volumeInfo: {
+        title: string;
+        authors: string[],
+        categories: string[],
+        description: string,
+        imageLinks: {
+            smallThumbnail: string,
+            thumbnail: string,
+        },
+        infoLink: string,
+        maturityRating: string,
+        pageCount: number,
+    }
+}
+
+export interface BooksList {
+    items: Book[];
+
+    map(element: (book: Book) => React.JSX.Element): any;
+}
+
+export interface BooksListComponentProps {
+    dataBook: BooksList;
+}
