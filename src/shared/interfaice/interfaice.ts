@@ -1,3 +1,5 @@
+
+
 export interface ClassProps {
     className?: string;
 }
@@ -35,8 +37,8 @@ export interface Book {
 export interface BooksList {
     items: Book[];
 
-    map(element: (book: Book) => React.JSX.Element): any;
 }
+
 
 export interface BooksListComponentProps {
     dataBook: BooksList;

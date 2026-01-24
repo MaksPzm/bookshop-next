@@ -27,9 +27,14 @@
         }
         .blockDescription__description {
             width: 176px;
-            height: 38px;
+            height: 35px;
             margin-top: 16px;
             text-transform: capitalize;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
         }
         .blockDescription__price {
             font: bold 13px "Montserrat", sans-serif;
