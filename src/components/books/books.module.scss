@@ -18,6 +18,7 @@
             color: rgba(92, 106, 121, 1);
         }
         .blockDescription__name {
+            width: 176px;
             font-size: 16px;
             line-height: 100%;
             margin-top: 4px;
@@ -41,31 +42,5 @@
             padding-top: 16px;
         }
 
-        .blockDescription__btn,
-        .blockDescription__btn_disabled {
-            display: block;
-            width: 176px;
-            height: 45px;
-            margin-top: 16px;
-            background-color: white;
-            text-transform: uppercase;
-            font: bold 8px "Montserrat", sans-serif;
-        }
-
-        .blockDescription__btn {
-            border: 1px solid rgba(76, 61, 178, 1);
-            color: rgba(76, 61, 178, 1);
-            cursor: pointer;
-        }
-        .blockDescription__btn:hover {
-            border: none;
-            background-color: rgba(76, 61, 178, 1);
-            color: white;
-        }
-        .blockDescription__btn_disabled {
-            border: 1px solid rgba(92, 106, 121, 1);
-            color: rgba(92, 106, 121, 1);
-            background-color: white;
-        }
     }
 }

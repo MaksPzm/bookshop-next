@@ -1,3 +1,4 @@
+import {ReactNode} from "react";
 
 
 export interface ClassProps {
@@ -19,6 +20,7 @@ export interface Book {
         },
         selfLink: string,
     }
+    shopCart: boolean;
     volumeInfo: {
         title: string;
         authors: string[],
@@ -42,4 +44,12 @@ export interface BooksList {
 
 export interface BooksListComponentProps {
     dataBook: BooksList;
+}
+
+export interface BtnBuyComponentProps {
+    dataBook: Book[];
+    setDataBook: Function;
+    indexBook: number;
+    className?: string;
+    children?: ReactNode;
 }
